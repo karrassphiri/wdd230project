@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+    <title>Join Us</title>
+    <style>
+        #modal-container {
+            height: 100%;
+            width: 100%;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.2);
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        #modal-content {
+            height: 400px;
+            width: 500px;
+            background-color: white;
+            border-radius: 25px;
+        }
+
+        #instruction-summary {
+            color: black;
+        }
+
+        .dark {
+            color: black;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="message">🤝🏼  Come join us to help build a healthy community everyday at 7:00 a.m.</div>
+        <div class="logo">
+            <img src="images/logo_bountifulFoods.webp" alt=" Samsan logo" />
+        </div>
+        <div class="headerSloganWrapper">
+
+                    </div>
+        <nav>
+            <div class="social">
+                <a href="https://www.facebook.com/"><img src="images/square-facebook.svg"
+                        alt="facebook social media link" /></a>
+                <a href="https://www.twitter.com"><img src="images/square-twitter.svg" alt="twitter social link" /></a>
+                <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="linkedin social link" /></a>
+            </div>
+            <button id="hamburgerbttn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav" class="open">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">AboutUs</a></li>
+                <li class="active"><a href="PlaceOrder.html">PlaceOrder</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="thankyou.html">Thank you</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <div class="join_header">
+    <h3>Please place our order here</h3>
+    </div>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="contact-form">
+                    <form action="thankyou.html" method="get" accept-charset="UTF-8">
+
+                        <div class="row">
+                            <div class="w-50">
+                                <div class="input-group">
+                                    <label for="first_name">First Name</label>
+                                    <input type="text" name="first_name" id="first-name" placeholder="First Name" class="input-control"
+                                        required />
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="last_name">Last Name</label>
+                                    <input type="text" name="last_name" id="last-name" placeholder="Last Name" class="input-control"
+                                        required />
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" placeholder="example@email.com" id="e-address" name="email"
+                                        class="input-control" required /></div>
+
+                                <div class="input-group">
+                                    <label for="tel_num">Telephone Number</label>
+                                    <input type="tel" maxlength="10" required name="tel_num" id="tel" class="input-control" />
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="Address_name">Address Name</label>
+                                    <input type="text" required name="Address_name" id="e-address" class="input-control" /></div>
+
+                                <label for="b_description"><b>Select three special fruits:</b></label>
+                                <div class="input-group">
+                                    <label for="Specials">First specials</label>
+                                    <select name="Three specials" id="first-special" name="Special">
+                                        <option value="Apple" >Apple</option>
+                                        <option value="Apricot">Apricot</option>
+                                        <option value="Avocado">Avocado</option>
+                                        <option value="Banana">Banana</option>
+                                        <option vale="Blackberry">Blackberry</option>
+                                        <option value="Blueberry">Blueberry</option>
+                                        <option value="Cherry">Cherry</option>
+                                        <option value="Dragonfruit">Dragonfruit</option>
+                                        <option value="Durio">Durio</option>
+                                        <option value="Feijoa">Feijoa</option>
+                                        <option value="Fig">Fig</option>
+                                        <option value="Gooseberry">Gooseberry</option>
+                                        <option value="Grape">Grape</option>
+                                        <option value="Grapes">Garpes</option>
+                                        <option value="Greenapples">GreenApples</option>
+                                        <option value="Guava">Guava</option>
+                                        <option value="Kiwi">Kiwi</option>
+                                        <option value="Kiwifruit">KiwiFruit</option>
+                                        <option vaule="Lemon">Lemon</option>
+                                        <option value="Lime">Lime</option>
+                                        <option value="Lingonberry">Lingonberry</option>
+                                        <option value="Lychee">Lychee</option>
+                                        <option value="Mango">Mango</option>
+                                        <option value="Melon">Melon</option>
+                                        <option value="Morus">Morus</option>
+                                        <option value="Orange">Orange</option>
+                                        <option value="Papaye">Papaye</option>
+                                        <option value="Passionfruit">PassionFruit</option>
+                                        <option value="Pear">Pear</option>
+                                        <option value="Persiommon">Persiommon</option>
+                                        <option value="Pineapple">Pineapple</option>
+                                        <option value="Pitannaya">Pitannaya</option>
+                                        <option value="Plum">Plum</option>
+                                        <option value="Punica">Punica</option>
+                                        <option value="Raspberry">Raspberry</option>
+                                        <option value="Strawberry">Strawberry</option>
+                                        <option value="Tangerine">Tangerine</option>
+                                        <option value="Tomato">Tomato</option>
+                                        <option value="Watermelon">Watermelon</option>
+                                       
+
+                                    </select></div>
+
+                                <div class="input-group">
+                                    <label for="Specials">Second specials</label>
+                                    <select name="Three specials" id="second-special" name="Special">
+                                        <option value="Apple" >Apple</option>
+                                        <option value="Apricot">Apricot</option>
+                                        <option value="Avocado">Avocado</option>
+                                        <option value="Banana">Banana</option>
+                                        <option vale="Blackberry">Blackberry</option>
+                                        <option value="Blueberry">Blueberry</option>
+                                        <option value="Cherry">Cherry</option>
+                                        <option value="Dragonfruit">Dragonfruit</option>
+                                        <option value="Durio">Durio</option>
+                                        <option value="Feijoa">Feijoa</option>
+                                        <option value="Fig">Fig</option>
+                                        <option value="Gooseberry">Gooseberry</option>
+                                        <option value="Grape">Grape</option>
+                                        <option value="Grapes">Garpes</option>
+                                        <option value="Greenapples">GreenApples</option>
+                                        <option value="Guava">Guava</option>
+                                        <option value="Kiwi">Kiwi</option>
+                                        <option value="Kiwifruit">KiwiFruit</option>
+                                        <option vaule="Lemon">Lemon</option>
+                                        <option value="Lime">Lime</option>
+                                        <option value="Lingonberry">Lingonberry</option>
+                                        <option value="Lychee">Lychee</option>
+                                        <option value="Mango">Mango</option>
+                                        <option value="Melon">Melon</option>
+                                        <option value="Morus">Morus</option>
+                                        <option value="Orange">Orange</option>
+                                        <option value="Papaye">Papaye</option>
+                                        <option value="Passionfruit">PassionFruit</option>
+                                        <option value="Pear">Pear</option>
+                                        <option value="Persiommon">Persiommon</option>
+                                        <option value="Pineapple">Pineapple</option>
+                                        <option value="Pitannaya">Pitannaya</option>
+                                        <option value="Plum">Plum</option>
+                                        <option value="Punica">Punica</option>
+                                        <option value="Raspberry">Raspberry</option>
+                                        <option value="Strawberry">Strawberry</option>
+                                        <option value="Tangerine">Tangerine</option>
+                                        <option value="Tomato">Tomato</option>
+                                        <option value="Watermelon">Watermelon</option>
+                                        
+                                    </select></div>
+                                <div class="input-group">
+                                    <label for="Specials">Thrid specials</label>
+                                    <select name="Three specials" id="third-special" name="Special">
+                                        <option value="Apple" >Apple</option>
+                                        <option value="Apricot">Apricot</option>
+                                        <option value="Avocado">Avocado</option>
+                                        <option value="Banana">Banana</option>
+                                        <option vale="Blackberry">Blackberry</option>
+                                        <option value="Blueberry">Blueberry</option>
+                                        <option value="Cherry">Cherry</option>
+                                        <option value="Dragonfruit">Dragonfruit</option>
+                                        <option value="Durio">Durio</option>
+                                        <option value="Feijoa">Feijoa</option>
+                                        <option value="Fig">Fig</option>
+                                        <option value="Gooseberry">Gooseberry</option>
+                                        <option value="Grape">Grape</option>
+                                        <option value="Grapes">Garpes</option>
+                                        <option value="Greenapples">GreenApples</option>
+                                        <option value="Guava">Guava</option>
+                                        <option value="Kiwi">Kiwi</option>
+                                        <option value="Kiwifruit">KiwiFruit</option>
+                                        <option vaule="Lemon">Lemon</option>
+                                        <option value="Lime">Lime</option>
+                                        <option value="Lingonberry">Lingonberry</option>
+                                        <option value="Lychee">Lychee</option>
+                                        <option value="Mango">Mango</option>
+                                        <option value="Melon">Melon</option>
+                                        <option value="Morus">Morus</option>
+                                        <option value="Orange">Orange</option>
+                                        <option value="Papaye">Papaye</option>
+                                        <option value="Passionfruit">PassionFruit</option>
+                                        <option value="Pear">Pear</option>
+                                        <option value="Persiommon">Persiommon</option>
+                                        <option value="Pineapple">Pineapple</option>
+                                        <option value="Pitannaya">Pitannaya</option>
+                                        <option value="Plum">Plum</option>
+                                        <option value="Punica">Punica</option>
+                                        <option value="Raspberry">Raspberry</option>
+                                        <option value="Strawberry">Strawberry</option>
+                                        <option value="Tangerine">Tangerine</option>
+                                        <option value="Tomato">Tomato</option>
+                                        <option value="Watermelon">Watermelon</option>
+
+                                        
+                                    </select></div>
+
+                                <div class="input-group">
+                                    <label for="b_description">Instructions :</label>
+                                    <textarea name="b_description" id="instructions" class="input-control">
+
+            </textarea>
+                                </div>
+
+                                <div class="input-group">
+                                    <input type="datetime-local" id="date" hidden name="local_date">
+                                </div>
+
+                                <div><input id="submitButton" type="submit"> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot-info-box">
+            <!--      <div class="date">current date</div>-->
+            &copy; <span id="current_year">2022</span> &bull; BountifulFoods | Sandra Adeleye
+            | WDD 230 Project
+        </div>
+        <div id="modal-container">
+            <div id="modal-content">
+                <label style="margin-top: 20px;">Orders selected</label> <p>&#128512;</p> 
+                
+                <button onclick="document.getElementById('modal-container').style.display ='none';" class="btn"><i class="fa fa-close"></i>x</button>
+                <p class="dark"  id="first_name"></p>
+                <p class="dark" id="email_address"></p>
+                <p class="dark" id="tel_num"></p>
+                <h2>Fruits selected are :</h2>
+                <div id="nutrition"></div>
+                <p class="dark" id="First special"></p>
+                <p class="dark" id="Second special"></p>
+                <p class="dark" id="Third special"></p>
+
+                <h2>Instructions (options):</h2>
+                <p id="instruction-summary" ></p>
+                <div class="jsonoutput dark" id="summary"></div>
+                <div id="orderDate"></div>
+               
+            </div>
+        </div>
+        <!--        <script src="js/chamber_script.js"></script>-->
+
+    </footer>
+    <!-- <script type="text/javascript" src="data.json"></script> -->
+    <!-- <script type="text/javascript" src="./js/data.js"></script> -->
+
+    <script src="./js/date.js"></script>
+
+    <script>
+
+        function checkSelected (fruit) {
+            return (fruit.name == document.getElementById('second-special').value) || (fruit.name == document.getElementById('first-special').value) || (fruit.name == document.getElementById('third-special').value);
+        }
+
+        var btn = document.getElementById('submitButton');
+        btn.addEventListener("click", function (event) {
+            event.preventDefault();
+            document.getElementById('modal-container').style.display = "flex";
+            document.getElementById('instruction-summary').innerHTML = document.getElementById('instructions').value;
+            var first = document.getElementById('first-special');
+            document.getElementById('First special').innerHTML = first.value;
+            document.getElementById('Second special').innerHTML = document.getElementById('second-special').value;
+            document.getElementById('Third special').innerHTML = document.getElementById('third-special').value;
+            document.getElementById('first_name').innerHTML = document.getElementById('first-name').value;
+            document.getElementById('tel_num').innerHTML = document.getElementById('tel').value;
+            document.getElementById('email_address').innerHTML = document.getElementById('e-address').value;
+
+            fetch('./js/data.json')
+                .then(function (response) {
+                    return response.json();
+                })
+            .then(function (jsonObject) {
+                const fruits = jsonObject['fruits'];
+                var filtered = fruits.filter(checkSelected);
+                var carbo = 0;
+                var fat = 0;
+                var protein = 0;
+                var sugar = 0;
+                var calories = 0;
+                for (const item of filtered){
+                    carbo += item['nutritions']['carbohydrates'];
+                    fat += item['nutritions']['fat'];
+                    protein += item['nutritions']['protein'];
+                    sugar += item['nutritions']['sugar'];
+                    calories += item['nutritions']['calories'];
+                }
+            
+            document.getElementById('summary').innerHTML ='carbo: ' + carbo.toString() + '<br>' + 'fat: '+fat.toString() + '<br>' + 'protein: ' + protein.toString() + '<br>' + 'sugar: '+ sugar.toString() + '<br>' + 'calories: '+ calories.toString() + '<br>';
+            
+            });
+
+        })
+
+        function showModal() {
+
+        }
+    </script>
+</body>
+
+</html>
